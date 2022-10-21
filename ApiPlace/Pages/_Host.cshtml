@@ -1,0 +1,15 @@
+﻿@page "/"
+@namespace ApiPlace.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<component type="typeof(App)" render-mode="ServerPrerendered" />
+
+<head>
+    <script src="~/script.js"></script>
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPdqXkcwXNLuVE6WhTKS3ZCkFQ2OQj2fg&libraries=places&callback=initialize"></script>
+
+</head>
